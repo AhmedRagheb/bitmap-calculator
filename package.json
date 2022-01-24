@@ -1,0 +1,24 @@
+{
+  "name": "bitmap-calculator",
+  "version": "1.0.0",
+  "description": "bitmap challenge",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "start": "ts-node-dev src/index.ts --watch src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.1",
+    "jest": "26.1.0",
+    "prettier": "1.19.1",
+    "ts-jest": "26.1.0",
+    "ts-node-dev": "1.1.8",
+    "typescript": "3.9.4"
+  },
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}
