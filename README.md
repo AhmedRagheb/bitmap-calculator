@@ -26,8 +26,3 @@ You can run the following with `npm run ...`:
 - `build`: builds the project using TypeScript, output will be in the `dist` folder;
 - `start`: starts the server in development mode, automatically reloading when code changes;
 - `test`: runs tests in watch mode using Jest;
-
-## Tests
-
-```bash
-npm run test
