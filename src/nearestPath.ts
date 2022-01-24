@@ -17,8 +17,8 @@ export class NearestPath {
 
     let distance = 0;
     while (queue.length > 0) {
-      let intermitentQSize = queue.length;
-      while (intermitentQSize--) {
+      let queueSize = queue.length;
+      while (queueSize--) {
         const pixel = queue.shift() || {} as pixel;
         if (this.isVisited(visited, pixel)) {
           continue;
