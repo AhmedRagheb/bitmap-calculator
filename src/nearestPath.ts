@@ -5,17 +5,16 @@ export class NearestPath {
     if (!input.length) {
       return [];
     }
+    
+    let distance = 0;
 
-    let visited: pixel[] = [];
-
+    const visited: pixel[] = [];
     const rows: number = input.length;
     const cols: number = input[0].length;
 
-    let result: number[][] = this.fillWhiteMap(input);
+    const result: number[][] = this.fillWhiteMap(input);
+    const queue: pixel[] = this.fillQueueWithPixels(rows, cols, input);
 
-    let queue: pixel[] = this.fillQueueWithPixels(rows, cols, input);
-
-    let distance = 0;
     while (queue.length > 0) {
       let queueSize = queue.length;
       while (queueSize--) {
